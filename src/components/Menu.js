@@ -16,7 +16,25 @@ export default function Menu() {
           <Pizza
             name="Pizza Spinacci"
             ingredients="Mozarella, tomato, spinach and ricotta cheese"
-            photoName="./public.spinaci.jpg"
+            photoName="/spinaci.jpg"
+            price={12.99}
+          />
+          <Pizza
+            name="Pizza Focaccia"
+            ingredients="Mozarella, tomato, spinach and ricotta cheese"
+            photoName="/focaccia.jpg"
+            price={12.99}
+          />
+          <Pizza
+            name="Pizza Funghi"
+            ingredients="Mozarella, funghi, spinach and ricotta cheese"
+            photoName="/funghi.jpg"
+            price={12.99}
+          />
+          <Pizza
+            name="Pizza Margerita"
+            ingredients="Tomato, mozarella and ricotta cheese"
+            photoName="/margherita.jpg"
             price={12.99}
           />
         </ul>
