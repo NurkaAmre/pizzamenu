@@ -9,13 +9,16 @@ export default function Footer() {
 
   return (
     <footer className="footer">
-      <p>
-        {isOpen && (
-          <span>
-            We're open until {closeHour}:00. Come visti us or order online
-          </span>
-        )}
-      </p>
+      <div className="order">
+        <p>
+          {isOpen && (
+            <span>
+              We're open until {closeHour}:00. Come visti us or order online
+            </span>
+          )}
+        </p>
+        <button className="btn">Order</button>
+      </div>
     </footer>
   );
 }
