@@ -4,6 +4,7 @@ import Pizza from './Pizza';
 import pizzaData from '../data';
 
 export default function Menu() {
+  const numberPizza = pizzaData.length;
   return (
     <main className="menu">
       <h2>Our Menu</h2>
@@ -13,18 +14,20 @@ export default function Menu() {
           our stone oven, all organic, all delicious.
         </p>
 
-        <ul className="pizzas">
-          {pizzaData.map((pizza) => (
-            <Pizza {...pizza} key={pizza.name} />
-          ))}
-          {/* <Pizza
+        {numberPizza > 0 && (
+          <ul className="pizzas">
+            {pizzaData.map((pizza) => (
+              <Pizza {...pizza} key={pizza.name} />
+            ))}
+            {/* <Pizza
           <Pizza
             name="Pizza Margerita"
             ingredients="Tomato, mozarella and ricotta cheese"
             photoName="/margherita.jpg"
             price={12.99}
           /> */}
-        </ul>
+          </ul>
+        )}
       </>
     </main>
   );
