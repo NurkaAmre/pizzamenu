@@ -16,26 +16,9 @@ export default function Menu() {
 
         <ul className="pizzas">
           {pizzaData.map((pizza) => (
-            <Pizza {...pizza} />
+            <Pizza {...pizza} key={pizza.name} />
           ))}
           {/* <Pizza
-            name="Pizza Spinacci"
-            ingredients="Mozarella, tomato, spinach and ricotta cheese"
-            photoName="/spinaci.jpg"
-            price={12.99}
-          />
-          <Pizza
-            name="Pizza Focaccia"
-            ingredients="Mozarella, tomato, spinach and ricotta cheese"
-            photoName="/focaccia.jpg"
-            price={12.99}
-          />
-          <Pizza
-            name="Pizza Funghi"
-            ingredients="Mozarella, funghi, spinach and ricotta cheese"
-            photoName="/funghi.jpg"
-            price={12.99}
-          />
           <Pizza
             name="Pizza Margerita"
             ingredients="Tomato, mozarella and ricotta cheese"
