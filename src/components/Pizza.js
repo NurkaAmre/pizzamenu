@@ -1,6 +1,12 @@
 import React from 'react';
 
-export default function Pizza({ name, ingredients, photoName, price }) {
+export default function Pizza({
+  name,
+  ingredients,
+  photoName,
+  price,
+  soldOut,
+}) {
   return (
     <li className="pizza">
       <img src={photoName} />

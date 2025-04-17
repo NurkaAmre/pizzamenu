@@ -4,7 +4,6 @@ import Pizza from './Pizza';
 import pizzaData from '../data';
 
 export default function Menu() {
-  console.log(pizzaData);
   return (
     <main className="menu">
       <h2>Our Menu</h2>
