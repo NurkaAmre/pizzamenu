@@ -1,6 +1,7 @@
 import React from 'react';
 import '../index.css';
 import Pizza from './Pizza';
+import pizzas from '../../data';
 
 export default function Menu() {
   return (
@@ -13,7 +14,10 @@ export default function Menu() {
         </p>
 
         <ul className="pizzas">
-          <Pizza
+          {pizzaData.map((pizza) => (
+            <Pizza />
+          ))}
+          {/* <Pizza
             name="Pizza Spinacci"
             ingredients="Mozarella, tomato, spinach and ricotta cheese"
             photoName="/spinaci.jpg"
@@ -36,7 +40,7 @@ export default function Menu() {
             ingredients="Tomato, mozarella and ricotta cheese"
             photoName="/margherita.jpg"
             price={12.99}
-          />
+          /> */}
         </ul>
       </>
     </main>
