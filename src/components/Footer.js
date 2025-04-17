@@ -3,7 +3,7 @@ import '../index.css';
 
 export default function Footer() {
   const hour = new Date().getHours();
-  const openHour = 12;
+  const openHour = 20;
   const closeHour = 22;
   const isOpen = hour >= openHour && hour <= closeHour;
 
@@ -11,9 +11,14 @@ export default function Footer() {
     <footer className="footer">
       <div className="order">
         <p>
-          {isOpen && (
+          {isOpen ? (
             <span>
               We're open until {closeHour}:00. Come visti us or order online
+            </span>
+          ) : (
+            <span>
+              We're closed! We're happy to welcome between {openHour}:00 -{' '}
+              {closeHour}:00
             </span>
           )}
         </p>
