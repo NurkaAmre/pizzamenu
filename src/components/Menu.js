@@ -1,7 +1,7 @@
 import React from 'react';
 import '../index.css';
 import Pizza from './Pizza';
-import pizzas from '../../data';
+import pizzas from '../data';
 
 export default function Menu() {
   return (
@@ -14,8 +14,8 @@ export default function Menu() {
         </p>
 
         <ul className="pizzas">
-          {pizzaData.map((pizza) => (
-            <Pizza />
+          {pizzas.map((pizza) => (
+            <Pizza {...pizza} />
           ))}
           {/* <Pizza
             name="Pizza Spinacci"
