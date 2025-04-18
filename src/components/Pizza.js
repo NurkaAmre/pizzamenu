@@ -8,7 +8,7 @@ export default function Pizza({
   soldOut,
 }) {
   return (
-    <li className="pizza">
+    <li className={`pizza ${soldOut ? 'sold-out' : ''}`}>
       <img src={photoName} />
       <div>
         <h3>{name}</h3>
