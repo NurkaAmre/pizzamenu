@@ -13,7 +13,7 @@ export default function Pizza({
       <div>
         <h3>{name}</h3>
         <p>{ingredients}</p>
-        <span>{price}</span>
+        <span>{soldOut ? 'SOLD OUT' : price}</span>
       </div>
     </li>
   );
